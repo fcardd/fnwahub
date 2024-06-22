@@ -1,0 +1,103 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "FNWA v1 ",
+	LoadingTitle = "fnwa newwww",
+	LoadingSubtitle = "by 1.1.1y and willwarbo",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = "fnwa",
+		FileName = "fnwa"
+	},
+	KeySystem = false,
+	KeySettings = {
+		Title = "fnwa key",
+		Subtitle = "key ig ",
+		Note = "Join the discord (.gg/example)",
+		SaveKey = true,
+		Key = "123"
+	}
+})
+
+Rayfield:Notify("Title Example", "Content/Description Example", 4483362458) -- Notfication -- Title, Content, Image
+
+local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection("fe scripts lol")
+
+local Label = Tab:CreateLabel("FE scripts (some may be buggy)")
+
+local Button = Tab:CreateButton({
+	Name = "inf jump",
+	Callback = function()
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")       
+		end)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "FE backflip/frontflip",
+	Callback = function(Value)
+		loadstring(game:HttpGet('https://pastebin.com/raw/yjxXnxbS'))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "FE marble ball (buggy on some games)",
+	Callback = function(Value)
+		loadstring(game:HttpGet("https://pastebin.com/raw/BZr9bGDy", true))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "FE animations gui",
+	Callback = function(Value)
+		loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")()
+	end,
+})
+
+local Slider = Tab:CreateSlider({
+	Name = "Walkspeed",
+	Range = {0, 100},
+	Increment = 2,
+	Suffix = "Speed",
+	CurrentValue = 16,
+	Flag = "Slider1",
+	Callback = function(Value)
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end,
+})
+
+local Tab = Window:CreateTab("Settings", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+	Name = "Destroy UI",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+})
+
+-- Extras
+
+-- getgenv().SecureMode = false -- Only Set To True If Games Are Detecting/Crashing The UI
+
+-- Rayfield:Destroy() -- Destroys UI
+
+-- Rayfield:LoadConfiguration() -- Enables Configuration Saving
+
+-- Section:Set("Section Example") -- Use To Update Section Text
+
+-- Button:Set("Button Example") -- Use To Update Button Text
+
+-- Toggle:Set(false) -- Use To Update Toggle
+
+-- Slider:Set(10) -- Use To Update Slider Value
+
+-- Label:Set("Label Example") -- Use To Update Label Text
+
+-- Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"}) -- Use To Update Paragraph Text
+
+-- Keybind:Set("RightCtrl") -- Keybind (string) -- Use To Update Keybind
+
+-- Dropdown:Set("Option 2") -- The new option value -- Use To Update/Set New Dropdowns
