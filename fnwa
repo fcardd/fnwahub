@@ -39,3 +39,21 @@ end)
 Tab1:Button("universal farm jailbreak",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/BlitzIsKing/UniversalFarm/main/Loader/Regular'))()
 end)
+
+Tab1:Button("atomicx meepcity (OP)",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/yLegendzz/Scripts/main/Meepcity'))()
+end)
+
+Tab1 = Library:Tab("misc")
+
+Tab1:Button("infinite yield",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+Tab1:Button("remote spy",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/SimpleSpyV3/main.lua"))()
+end)
+
+Tab1:Button("audio logger",function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/infyiff/backup/main/audiologger.lua'),true))()
+end)
