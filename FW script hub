@@ -57,3 +57,7 @@ end)
 Tab1:Button("audio logger",function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/infyiff/backup/main/audiologger.lua'),true))()
 end)
+
+Tab1:Button("dex",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+end)
