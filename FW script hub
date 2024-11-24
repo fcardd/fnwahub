@@ -19,15 +19,8 @@ Library:Tab(
 )
 ]]
 
-Tab1:Button("case clicker auto clicker (no gui)",function()
-    while wait() do
-local args = {
-    [1] = "Click",
-    [3] = 51914
-}
-
-game:GetService("ReplicatedStorage").Remotes.RemoteEvent:FireServer(unpack(args))
-end
+Tab1:Button("case clicker auto clicker",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fcardd/ccautoclick/refs/heads/main/autoclick"))()
 end)
 
 Tab1 = Library:Tab("other scripts")
