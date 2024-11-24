@@ -37,6 +37,14 @@ Tab1:Button("atomicx meepcity (OP)",function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/yLegendzz/Scripts/main/Meepcity'))()
 end)
 
+Tab1:Button("synolope meepcity gui",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/synolope/mpcity/main/loader.lua",true))()
+end)
+
+Tab1:Button("meepcracked",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/synolope/meepcracked/main/loader.lua'))()
+end)
+
 Tab1 = Library:Tab("misc")
 
 Tab1:Button("infinite yield",function()
